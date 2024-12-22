@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video in Canvas</title>
+  <style>
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+    }
+    button {
+      display: block;
+      margin: 10px auto;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Demo</h1>
+
+  <!-- Canvas for video display -->
+  <canvas id="canvas" width="800" height="450"></canvas>
+
+  <!-- Play/Pause button -->
+  <button id="playPause">Play/Pause Video</button>
+
+  <!-- Background music -->
+  <audio id="bgMusic" src="file:///C:/project/background-music.mp3" loop></audio>
+
+  <!-- Displaying images -->
+  <h2>Images:</h2>
+  < img src="file:///C:/project/images/image1.jpg" alt="Image 1">
+  < img src="file:///C:/project/images/image2.jpg" alt="Image 2">
+
+  <!-- Video element -->
+  <video id="video" width="800" height="450" controls>
+    <source src="file:///C:/project/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script src="script.js"></script>
+</body>
+</html>
